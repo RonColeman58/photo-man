@@ -8,7 +8,7 @@
   --prinary-brightgreen: #25bd11;
   --primary-dark: rgb(52, 58, 64);
   --primary-red: #ef4035;
-  --primary-hover-red: #ef4035;
+  --primary-hover-red: #e7493e;
   --primary-black: #000000;
   --primary-green: green;
   --primary-transparent-black: rgb(0, 0, 0, 0.7);
@@ -75,8 +75,7 @@ nav ul li {
 
 .header-wrapper {
   position: relative;
-  background: url(C:\Users\zendr\OneDrive\Desktop\photo-portfolio\src\images\Agave-.jpg)
-    no-repeat;
+  background: url(C:\Users\zendr\Desktop\photo-portfolio\src\images\Agave-.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -98,9 +97,9 @@ nav ul li {
 }
 
 .main-info h1 {
-  color: var(--prinary-brightgreen);
+  color: var(--primary-white);
   text-transform: uppercase;
-}
+  font-size: 5rem;}
 
 /*-------------Typed Text-------------*/
 
@@ -601,4 +600,26 @@ textarea.form-control {
   .contacts p {
     padding: 0 0.4rem;
   }
+}
+
+/* ---------------------Footer---------------------- */
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-gray);
+  padding: 3rem;
+}
+
+.footer a {
+ text-decoration: none;
+ color: var(--primary-dark-gray); 
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--prinary-brightgreen);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
