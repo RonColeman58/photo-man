@@ -63,7 +63,7 @@ nav ul li {
 }
 
 .navbar-nav > li > a:active,
-.navbar-nav > li > a.active:focus {
+.navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--prinary-brightgreen);
 }
 
@@ -78,7 +78,7 @@ nav ul li {
   background: url(C:\Users\zendr\Desktop\photo-portfolio\src\images\Agave-.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -377,9 +377,13 @@ nav ul li {
   cursor: pointer;
 }
 
+.popupbox-wrapper {
+  margin-top: 7rem;
+}
+
 /*-------------Popupbox-------------*/
 .portfolio-image-popupbox {
-  height: 24rem;
+  height: 70rem;
   width: 30rem;
   padding: 0 0.5rem;
 }
@@ -393,9 +397,10 @@ nav ul li {
   color: var(--primary-red);
 }
 
+/* popup wrapper size */
 .popupbox-wrapper {
-  height: 24rem;
-  width: 30rem;
+  height: 40rem;
+  width: 53rem;
 }
 
 /*-------------Popupbox media-------------*/
@@ -407,30 +412,30 @@ nav ul li {
 }
 @media (max-height: 640px) {
   .popupbox-wrapper {
-    height: 100% !important;
-    width: 55%;
+    height: 60% !important;
+    width: 90%;
   }
 
   .portfolio-image-popupbox {
+    height: 70%;
     width: 90%;
-    height: 60%;
   }
 }
 @media (max-height: 280px) {
   .popupbox-wrapper {
-    height: 70% !important;
-    width: 55%;
+    height: 60% !important;
+    width: 75%;
   }
 
   .portfolio-image-popupbox {
-    width: 30%;
-    height: 60%;
+    width: 80%;
+    height: 75%;
   }
 }
-
+/* picture size */
 .portfolio-image-popupbox {
   width: 100%;
-  height: 54%;
+  height: 68%;
 }
 
 /*-------------Testimonals-------------*/

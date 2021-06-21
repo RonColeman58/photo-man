@@ -1,4 +1,14 @@
 import React from 'react'
+import{
+    FacebookShareButton,
+    FacebookIcon,
+    TwitterShareButton,
+    TwitterIcon, 
+    RedditShareButton,
+    RedditIcon,
+    LinkedinShareButton,
+    LinkedinIcon
+} from "react-share"
 
 const Footer = () => {
     return (
@@ -20,23 +30,64 @@ const Footer = () => {
                         <div className="row">
                             <div className="col">
                                 <a className="footer-nav">Home</a>
-                                <br/>>
+                                <br/>
                                 <a className="footer-nav">About Me</a>
-                                <br/>>
+                                <br/>
                                 <a className="footer-nav">Services</a>
                             </div>
                             <div className="col">
                                 <a className="footer-nav">Experience</a>
-                                <br/>>
+                                <br/>
                                 <a className="footer-nav">Portfolio</a>
-                                <br/>>
+                                <br/>
                                 <a className="footer-nav">Contacts</a>
                             </div>
                         </div>
                     </div>
+                    <div className="col-lg-5 co;-md-5 col-sm-6 align-items-center">
+                        <div className="d-flex justify-content-center">
+                        
+                            <FacebookShareButton
+                                url={`https://www.facebook.com`}
+                                quote={`Professioal Photograpjic Services`}
+                                hashtag="#facebook"
+                                >
+                                <FacebookIcon className="mx-3" size={36} />
+                            </FacebookShareButton>
+
+                            <TwitterShareButton
+                                url={`https://www.twitter.com`}
+                                quote={`Professioal Photograpjic Services`}
+                                hashtag="#facebook"
+                                >
+                                <TwitterIcon className="mx-3" size={36} />
+                            </TwitterShareButton>
+
+                            <RedditShareButton
+                                url={`https://www.reddit.com`}
+                                quote={`Professioal Photograpjic Services`}
+                                hashtag="#facebook"
+                                >
+                                <RedditIcon className="mx-3" size={36} />
+                            </RedditShareButton>
+
+                            <LinkedinShareButton
+                                url={`https://www.linkedin.com`}
+                                quote={`Professioal Photograpjic Services`}
+                                hashtag="#facebook"
+                                >
+                                <LinkedinIcon className="mx-3" size={36} />
+                            </LinkedinShareButton>
+                        </div>
+                    <p className="pt-3 text-center">
+                        Copyright&copy;
+                        {new Date().getFullYear()}&nbsp;Cassagnol Photography | All Rights
+                        Reserved
+                    </p> 
                 </div>
             </div>
         </div>
+    </div>
     )
 }
 
